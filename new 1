@@ -1,0 +1,5 @@
+<input type="text" name="peraddl1" value="" placeholder="Line 1..." id="addbar"> <br>
+                <input type="text" name="peraddl2" value="" placeholder="Line 2..." id="addbar"><br>
+				
+				<input type="text" name="curraddl1" value="" placeholder="Line 1..." id="addbar"><br>
+                <input type="text" name="curraddl2" value="" placeholder="Line 2..." id="addbar"><br>

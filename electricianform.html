@@ -1,0 +1,133 @@
+<html>
+ <head>
+   <title>Electrician</title>
+   <link href="formcss.css" type="text/css" rel="stylesheet">
+ </head>
+
+ <body onload="reset()" >
+	<header>
+   <center><h1>ELECTRICIAN HIRE FORM</h1></center><br>
+   </header>
+
+  <hr><h1 class="head"><center>Hire  Electrician for your problem</h1>
+	</center>
+
+     <center>Please fill  up the form below and press submit when done.</center><br>
+     <span class="span1" >
+         <form method="post" action="electrician.php">
+         <fieldset>
+             <legend> Customer Information</legend>
+
+             Name of customer:<br><input type="text" name="name" value=""><br>
+             Contact Number:<br><input type="text" name="phone" value=""><br>
+             Email ID:<br><input type="email" name="email" value="">
+         </fieldset>
+
+         <fieldset>
+             <legend>Service information</legend><br>
+                Address where you want our service:<br>
+                <textarea name="address" id="txtar"></textarea><br>
+                <br>
+                Zip/Pin Code:<br><input type="text" name="zip" value=""><br><br>
+                Date:<br>
+                    <input type="date" name="date" value=""><br>
+                Preffered time:<br>
+                    <select name="time">
+                        <option>Morning</option>
+                        <option>Noon time</option>
+                        <option>Evening</option>
+						<option>Night</option>
+             </select>
+         </fieldset>
+
+         <fieldset class="fset2">	<legend> Problem description </legend>
+
+    <p>Problem of:<br>
+    <select name="Problem" id="sectorx" onclick="sectors()" color="blue" id="sel">
+		<option onclick="ac()">A.C.</option>
+		<option onclick="ref()">Refrigerator</option>
+		<option onclick="clr()">Cooler</option>
+		<option onclick="mxr()">Mixer</option>
+		<option onclick="elc()">Electrical Connectivity</option>
+		<option onclick="mnl()">Main Line</option>
+		<option onclick="mtr()">Meter</option>
+		<option onclick="tv()">T.V.</option>
+		<option onclick="com()">Computer</option>
+		<option onclick="oth()">Other</option>
+		</select>
+
+    <br>
+    Describe your problem:<p>
+    <textarea name="description" id="txtar2" ></textarea></p>
+    <br>
+	<p><input type="submit" value="Submit" height="30" width="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="reset" type="reset" value="Reset" id="reset" height="30" width="30">
+	</form>
+</span>
+</fieldset>
+
+<div id="div1">
+  <fieldset id="fset"><legend><i><b><h3>Available Electrician on given time</h3></b></i></legend>
+  <div padding="5px" id="div2">
+  <p>ELECTRICIAN:<br>
+    <b id="place"></b></p>
+</div></fieldset>
+</div>
+<span class="span2"><a href="index.html" style="color:white;">Home</a></span>
+
+
+
+    <style>
+        footer.ff{
+            background-color: blue;
+            height: 20px;
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+
+    </style>
+    <footer class="ff">
+        <center>Copyright &copy; NVB pvt. ltd </center>
+
+    </footer>
+
+
+  <script>
+
+function reset(){
+  document.getElementById("reset").click();
+}
+
+ function ac(){
+     document.getElementById("place").innerHTML="Engineer_1";
+ }
+      function ref(){
+     document.getElementById("place").innerHTML="Engineer_2";
+ }
+      function clr(){
+     document.getElementById("place").innerHTML="Engineer_3";
+ }
+      function mxr(){
+     document.getElementById("place").innerHTML="Engineer_4";
+ }
+      function elec(){
+     document.getElementById("place").innerHTML="Engineer_5";
+ }
+      function mnl(){
+     document.getElementById("place").innerHTML="Engineer_6";
+ }
+      function mtr(){
+     document.getElementById("place").innerHTML="Engineer_7";
+ }
+      function tv(){
+     document.getElementById("place").innerHTML="Engineer_8";
+ }
+      function com(){
+     document.getElementById("place").innerHTML="Engineer_9";
+ }
+      function oth(){
+     document.getElementById("place").innerHTML="Engineer_10";
+ }
+
+  </script>
+	</body>
+</html>

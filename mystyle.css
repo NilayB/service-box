@@ -1,0 +1,156 @@
+/* #2196F3 blue #F44336 red #607D8B bluegrey #009688 teal #FFEB3B yellow #FF9800 orange */
+body{
+                background-color: cornsilk;
+                color: coral;
+            }
+
+/* --------------------------------------topbar---------------------------------------------------------- */
+#topbar{padding:10px 0 0 0; text-align:right; font-size:.8em;}
+
+            #topbar li{display:inline; margin-right:3px; padding-right:8px; border-right:1px solid;}
+            #topbar li:last-child{margin-right:0; padding-right:0; border:none;}
+            #topbar li{border-color:#FFFFFF;}
+
+            #topbar li{border-color:#FFFFFF;}
+/*--------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------header-----------------------------------------------------------*/
+
+header {
+                background-color: #F44336;
+                color: aliceblue;
+                padding: 20px;
+                text-align: center;
+            }
+/*------------------------------------navigation-bar-----------------------------------------------------*/
+
+.clear {
+                        list-style-position: inherit;
+                        list-style-type: none;
+                        margin-left: 260px;
+                        width: 900px;
+                        padding-left: 125px ;
+                        overflow: hidden;
+                        background-color: #2196F3;
+                        background-size: contain;
+                        text-transform: uppercase;
+                        border-radius: 5px;
+						font-weight: 800;
+                        }
+
+
+                    #navbarli {
+                        float: left;
+                        }
+
+                    #navbarli a {
+                        display: block;
+                        color: black;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        }
+
+                    #navbarli a:hover{
+                        background-color: gray;
+                        }
+/*--------------------------------------------------------------------------------------------------------*/
+/*------------------------------------middle-part---------------------------------------------------------*/
+.mid{
+                background-color: cornsilk;
+                margin-left: 250px;
+            }
+
+            #div_mech, #div_elec, #div_carp
+            {
+				color: black;
+                display: inline ;
+                width: 200px;
+                height: 270px;
+                left: 50px;
+                background-color: darkgray;
+                display: inline-block;
+                margin: 50px;
+                padding: 10px;
+                border: 5px;
+				border-radius: 8px ;
+                border-color: cyan;
+                background-color: #FFEB3B;
+				border-color: black;
+				border-style: double;
+				
+            }
+            #div_pain, #div_kitc, #div_plum
+            {
+				color: black;
+                display: inline ;
+                width: 200px;
+                height: 280px;
+                left: 50px;
+                background-color: darkgray;
+                display: inline-block;
+                margin: 50px;
+                padding: 10px;
+                border: 5px;
+				border-radius: 8px ;
+                border-color: cyan;
+				border-color: black;
+				border-style: double;
+                background-color: #FFEB3B;
+				
+            }
+            #img{
+				position: relative;
+				border: 2px;
+				background-color: white;
+				border-style: solid;
+				border-color: black;
+				border-radius: 6px ;
+				height: 100px;
+				width: 100px;
+				margin-left: 50px;
+            }
+			#img:hover{
+				background: #F5F5F1 ;
+				height: 120px ;
+				width: 120px ;
+				
+				margin-left: 40px ;
+				
+				cursor: pointer ;
+			}
+		
+/*--------------------------------------------------------------------------------------------------------*/
+/*------------------------------------vertical-menu-------------------------------------------------------*/
+.vertical-menu {
+                width: 250px; /* Set a width if you like */
+                display: inline-block;
+                position: relative;
+                top: -850px;
+                }
+
+            .vertical-menu a {
+                    background-color: white; /* Grey background color */
+                    color: black; /* Black text color */
+                    display: block; /* Make the links appear below each other */
+                    padding: 5px; /* Add some padding */
+                    text-decoration: none; /* Remove underline from links */
+                }
+
+            .vertical-menu a:hover {
+                    background-color: #ccc; /* Dark grey background on mouse-over */
+                }
+
+            .vertical-menu a.active {
+                    background-color: white; /* Add a green color to the "active/current" link */
+                    color: black;
+                }
+/*--------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------footer---------------------------------------------------------------*/
+footer{
+                background-color: #F44336;
+                color: wheat;
+                text-align: center;
+                padding: 20px;
+                position: relative;
+				top: -100px ;	
+            }

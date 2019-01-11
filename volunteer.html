@@ -1,0 +1,161 @@
+<html>
+ <head><title>Volunteer Registration form</title>
+     
+     <style>
+         body{
+             padding: 20px;
+			 background-color: #FFEB3B;
+			 font-size: 16px;
+             font-weight: 1000;
+         }
+		 header{
+			background-color: #F44336;
+			padding: 10px;
+			
+		 }
+		 h1{
+			color: white;
+		 }
+         div.current, div.permanent{
+             display: inline-block;
+             padding: 20px;
+			 width:30%;
+         }
+		 div.permanent{
+			margin-left:200px;
+			position:relative;
+			
+		 }
+         .submit{
+             margin-left: 40px;
+             position: relative;
+             
+         }
+		 input[type=text] , select {
+			font-size: 14px;
+			width:60%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			margin-right:40px;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=email] {
+			font-size: 14px;
+			width:50%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=date] {
+			font-size: 14px;
+			width:20%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		#num{
+			width: 500px;
+		}
+		#addbar{
+			width: 500px;
+		}
+		 .submit {
+			font-size: 16px;
+			width:10%;
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			margin-left: 300px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		 }
+		 .submit:hover {
+			background-color: #45a049;
+		}
+         legend{
+             font-family: cursive;
+             font-size: 20px;
+             color: #607D8B;
+         }
+		
+     </style>
+     
+    </head>
+ <body>
+	<header>
+		<center><h1> VOLUNTEER REGISTRATION FORM</h1></center>
+	</header>
+  
+   <form  method="GET">
+   
+   <fieldset>
+   <legend>Personal Information</legend>
+   <div class="person">
+   First Name:
+   <input type="text" name="firstname" placeholder="Your Name..." required><br>
+   Last Name:
+   <input type="text" name="lastname" placeholder="Your lastname..." required><br>
+   DOB:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <input type="date" name="dob" placeholder="01/01/2001" required><br>
+   </div>
+   
+   </fieldset>
+   
+       <fieldset>
+           <legend>Contact Details</legend>
+		   <div class="contact">
+           Contact No.:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <input type="text" name="contact" value="+91 " id="num" required><br>
+           Alternate No. (if any)
+           <input type="text" name="othno" value="+91 " id="num"><br>
+           Email ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <input type="text" name="mailid" value="" placeholder="E.g. abcxyz@gmail.com" id="num" required><br>
+		   </div>
+       </fieldset>
+       
+       <fieldset>
+           <legend>Residential  Information</legend>
+		   
+		        <div class="current">
+                Current Address:<br>
+                <textarea name="curradd" required></textarea><br>
+                City: <br>              
+                <input type="text" name="city" placeholder="E.g. Nagpur" value="" required><br>
+                Pin/Zip Code: <br>              
+                <input type="text" name="pin" placeholder="E.g. 440006" value="" required><br>
+                State:<br>
+                <input type="text" name="state" value="" placeholder="E.g. Maharashtra" required><br>
+           </div>
+		   
+           <div class="permanent">
+                Permanent Address:<br>
+                <textarea name="peradd" required></textarea><br>
+                City: <br>              
+                <input type="text" name="pcity" value="" placeholder="E.g. Nagpur" required><br>
+                Pin/Zip Code: <br>              
+                <input type="text" name="ppin" value="" placeholder="E.g. 440006" required><br>
+                State:<br>
+                <input type="text" name="pstate" value="" placeholder="E.g. Maharashtra" required><br>
+           </div>
+		   
+		   
+		   
+               
+       </fieldset>
+       <button type="submit" class="submit"> Submit</button>
+       <button type="reset" class="submit">  Reset</button>
+       
+     </form>
+ </body>
+</html>

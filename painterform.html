@@ -1,0 +1,122 @@
+<html>
+ <head>
+   <title>Painter</title>
+   <style>
+   option {color:red;text-size:10;}
+
+   </style>
+ </head>
+
+ <body text="lightblue" bgcolor="black"  onload="reset()" style="border-style:double;border-color:orange;border-width:5px;">
+
+   <center><marquee direction="left" scrollamount="4px"width="900px"><h1 style="color:blue;font-size:40px;">Painter HIRE FORM</h1></marquee><br>
+
+  <hr><h1>Hire  Painter for your problem</h1>
+	</center>
+
+     <center>Please fill  up the form below and press submit when done.</center><br>
+     <span style="font-size:16px;position:relative;left:10px;">
+         <form method="post" action="painter.php">
+         <fieldset>
+             <legend> Customer Information</legend>
+
+             Name of customer:<br><input type="text" name="customername" value=""><br>
+             Contact Number:<br><input type="text" name="contact" value=""><br>
+             Email ID:<br><input type="email" name="email" value="">
+         </fieldset>
+
+         <fieldset>
+             <legend>Service information</legend><br>
+                Address where you want our service:<br>
+                <textarea style="width:400px;height:100px;"></textarea><br>
+                <br>
+                Zip/Pin Code:<br><input type="text" name="zip" value=""><br><br>
+                Date:<br>
+                    <input type="date" name="date" value=""><br>
+                Preffered time:<br>
+                    <select name="time">
+                        <option>Morning</option>
+                        <option>Noon time</option>
+                        <option>Evening</option>
+             </select>
+         </fieldset>
+
+         <fieldset>
+             <legend> </legend>
+
+         </fieldset>
+
+    <p>Problem of:<br>
+    <select name="sector" id="sectorx" onclick="sectors()" color="blue" style="width:210px;height:25px;">
+		<option onclick="fhp()" selected>Full House Paint</option>
+		<option onclick="orp()">One Room Paint</option>
+		<option onclick="trp()">Two Room paint</option>
+		<option onclick="tr()">Three Room Paint</option>
+		<option onclick="wcp()">Wall Compound Paint</option>
+		<option onclick="otp()">Other Paintings</option>
+
+		</select>
+
+    <br>
+    Describe your problem:<p>
+    <textarea name="description" style="max-width:400px;max-height:150px;min-width:400px;height:150px;" ></textarea></p>
+    <br>
+	<p><input type="submit" value="Submit" height="30" width="30">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset" id="reset" height="30" width="30">
+	</form>
+</span>
+
+<div style="color: white; position:relative; top:-330px; left: 700px;font-size:16px;width:500px;height:300px;padding-left:20px;">
+  <fieldset style="position:relative;height:300px;"><legend  ><i><b><h3>Available Meachanic on given time</h3></b></i></legend>
+  <div padding="5px" style="position:relative;left:30px;width:470px;color:magenta">
+  <p>Painter:<br>
+    <b id="place"></b></p>
+</div></fieldset>
+</div>
+<span style="position:relative;left:2000px;font-weight:bold;font-size:40px;padding:40px;background-color:purple;bottom:110px;"><a href="index.html" style="color:white;">Home</a></span>
+
+
+
+    <style>
+        footer.ff{
+            background-color: blue;
+            height: 20px;
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+
+    </style>
+    <footer class="ff">
+        <center>Copyright &copy; NVB pvt. ltd </center>
+
+    </footer>
+
+
+  <script>
+
+function reset(){
+  document.getElementById("reset").click();
+}
+
+ function fhp(){
+     document.getElementById("place").innerHTML="Painter_1";
+ }
+      function orp(){
+     document.getElementById("place").innerHTML="Painter_2";
+ }
+      function trp(){
+     document.getElementById("place").innerHTML="Painter_3";
+ }
+      function tr(){
+     document.getElementById("place").innerHTML="Painter_4";
+ }
+      function wcp(){
+     document.getElementById("place").innerHTML="Painter_5";
+ }
+      function otp(){
+     document.getElementById("place").innerHTML="Painter_6";
+ }
+
+
+  </script>
+	</body>
+</html>
